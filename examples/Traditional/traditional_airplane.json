@@ -2,9 +2,9 @@
     "CG" : [0,0,0],
     "weight" : 100.0,
     "reference" : {
-        "area" : 8.0,
-        "longitudinal_length" : 1.0,
-        "lateral_length" : 4.0
+        "area" : 20.0,
+        "longitudinal_length" : 3.0,
+        "lateral_length" : 10.0
     },
     "controls" : {
         "aileron" : {
@@ -27,7 +27,10 @@
             "CD0" : 0.00569,
             "CD1" : -0.00450,
             "CD2" : 0.01040,
-            "CL_max" : 1.4
+            "CL_max" : 1.4,
+            "geometry" : {
+                "NACA" : "2410"
+            }
         },
         "NACA_0010" : {
             "type" : "linear",
@@ -38,7 +41,10 @@
             "CD0" : 0.00513,
             "CD1" : 0.0,
             "CD2" : 0.0984,
-            "CL_max" : 1.4
+            "CL_max" : 1.4,
+            "geometry" : {
+                "NACA" : "0010"
+            }
         }
     },
     "wings" : {
@@ -46,7 +52,8 @@
             "ID" : 1,
             "side" : "both",
             "is_main" : true,
-            "semispan" : 4.0,
+            "semispan" : 10.0,
+            "twist" : [[0.0, 0.0], [0.5, 0.0], [0.5, 2.0], [1.0, 2.0]],
             "airfoil" : "NACA_2410",
             "control_surface" : {
                 "chord_fraction" : 0.1,
