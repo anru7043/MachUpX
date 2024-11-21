@@ -27,6 +27,11 @@
                     "velocity" : 100,
                     "alpha" : 2.0,
                     "beta" : 0.0
+                },
+                "control_state" : {
+                    "elevator" : 0.0,
+                    "rudder" : 0.0,
+                    "aileron" : 0.0
                 }
             }
         }
