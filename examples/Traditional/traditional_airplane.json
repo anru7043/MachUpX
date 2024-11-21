@@ -6,17 +6,6 @@
         "longitudinal_length" : 3.0,
         "lateral_length" : 10.0
     },
-    "controls" : {
-        "aileron" : {
-            "is_symmetric" : false
-        },
-        "elevator" : {
-            "is_symmetric" : true
-        },
-        "rudder" : {
-            "is_symmetric" : false
-        }
-    },
     "airfoils" : {
         "NACA_2410" : {
             "type" : "linear",	
@@ -55,13 +44,6 @@
             "semispan" : 10.0,
             "twist" : [[0.0, 0.0], [0.5, 0.0], [0.5, 2.0], [1.0, 2.0]],
             "airfoil" : "NACA_2410",
-            "control_surface" : {
-                "chord_fraction" : 0.1,
-                "control_mixing" : {
-                    "aileron" : 1.0,
-                    "elevator" : 0
-                }
-            },
             "grid" : {
                 "N" : 40
             }
