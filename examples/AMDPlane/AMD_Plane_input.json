@@ -22,7 +22,7 @@
         "atmosphere" : {},
         "aircraft" : {
             "traditional_airplane" : {
-                "file" : "traditional_airplane.json",
+                "file" : "AMD_Plane.json",
                 "state" : {
                     "velocity" : [45, "mph"],
                     "alpha" : 2.0,
