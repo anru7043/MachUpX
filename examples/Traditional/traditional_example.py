@@ -46,3 +46,7 @@ if __name__=="__main__":
     # Now that we're trimmed, let's see what our aerodynamic derivatives are.
     derivs = my_scene.derivatives()
     print(json.dumps(derivs["traditional_airplane"], indent=4))
+
+    # export geometry
+    my_scene.export_stl(filename = "traditional_airplane.stl")
+    my_scene.export_dxf(aircraft = "traditional_airplane")

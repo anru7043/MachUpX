@@ -24,7 +24,7 @@
             "traditional_airplane" : {
                 "file" : "traditional_airplane.json",
                 "state" : {
-                    "velocity" : 100,
+                    "velocity" : [45, "mph"],
                     "alpha" : 2.0,
                     "beta" : 0.0
                 },
