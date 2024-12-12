@@ -1,11 +1,11 @@
 {
-    "tag" : "Example input file using a traditional airplane",
+    "tag" : "Example input file using a flying wing",
     "run" : {
         "display_wireframe" : {
             "show_legend" : true
         },
         "solve_forces" : {
-            "non_dimensional" : true
+            "non_dimensional" : false
         },
         "pitch_trim" : {
             "set_state_to_trim" : true
@@ -13,24 +13,21 @@
         "derivatives" : {}
     },
     "solver" : {
-        "type" : "nonlinear",
-        "convergence" : 1e-10,
-        "relaxation" : 0.9
+        "type" : "linear"
     },
     "units" : "English",
     "scene" : {
         "atmosphere" : {},
         "aircraft" : {
-            "traditional_airplane" : {
-                "file" : "traditional_airplane.json",
+            "flying_wing" : {
+                "file" : "flying_wing.json",
                 "state" : {
-                    "velocity" : [45, "mph"],
+                    "velocity" : 100,
                     "alpha" : 2.0,
                     "beta" : 0.0
                 },
                 "control_state" : {
                     "elevator" : 0.0,
-                    "rudder" : 0.0,
                     "aileron" : 0.0
                 }
             }

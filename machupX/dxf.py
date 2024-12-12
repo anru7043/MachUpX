@@ -5,6 +5,7 @@ These lines are received as three 2D arrays. one is for x coordinates, one is fo
 Each x array index is an array of x-coordinates for a spline, to be reported in conjunction with the same index of the y array and the z array.
 """
 
+from pdb import pm
 import numpy as np
 from datetime import datetime as dt
 import os
@@ -84,7 +85,7 @@ def dxf_line(filename,x,y,z,file_info):
     f.close()
 
     # # move file to desktop
-    # pm.move_file_to_Desktop(filename + ".dxf")
+    pm.move_file_to_Desktop(filename + ".dxf")
 
     return
 
@@ -151,7 +152,7 @@ def dxf_point(filename,x,y,z,file_info):
     f.close()
 
     # # move file to desktop
-    # pm.move_file_to_Desktop(filename + ".dxf")
+    pm.move_file_to_Desktop(filename + ".dxf")
 
     return
 
@@ -222,7 +223,7 @@ def dxf_lwpolyline(filename,x,y,z,file_info):
     f.close()
 
     # # move file to desktop
-    # pm.move_file_to_Desktop(filename + ".dxf")
+    pm.move_file_to_Desktop(filename + ".dxf")
 
     return
 
@@ -323,7 +324,7 @@ def dxf_spline(filename,x,y,z,file_info):
     f.close()
 
     # # move file to desktop
-    # pm.move_file_to_Desktop(filename + ".dxf")
+    pm.move_file_to_Desktop(filename + ".dxf")
 
     return
 

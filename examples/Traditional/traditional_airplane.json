@@ -1,6 +1,12 @@
 {
     "CG" : [0,0,0],
     "weight" : 2.5,
+    "weight" : 100.0,
+    "reference" : {
+        "area" : 20.0,
+        "longitudinal_length" : 3.0,
+        "lateral_length" : 10.0
+    },
     "controls" : {
         "aileron" : {
             "is_symmetric" : false
@@ -48,6 +54,8 @@
             "side" : "both",
             "is_main" : true,
             "semispan" : [0.5, "ft"],
+            "semispan" : 10.0,
+            "twist" : [[0.0, 0.0], [0.5, 0.0], [0.5, 2.0], [1.0, 2.0]],
             "airfoil" : "NACA_2410",
             "control_surface" : {
                 "chord_fraction" : 0.25,

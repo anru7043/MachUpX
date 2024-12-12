@@ -12,6 +12,8 @@ $ python -m machupX traditional_input.json
 
 # Import the MachUpX module
 import machupX as MX
+import numpy as np
+import matplotlib.pyplot as plt
 
 # Input the json module to make displaying dictionaries more friendly
 import json
@@ -50,3 +52,5 @@ if __name__=="__main__":
     # export geometry
     my_scene.export_stl(filename = "traditional_airplane.stl")
     my_scene.export_dxf(aircraft = "traditional_airplane")
+    # my_scene.export_dxf(aircraft = "traditional_airplane")
+    # my_scene.export_stp(filename = "traditional_airplane.stp")
