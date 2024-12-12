@@ -1,5 +1,5 @@
 {
-    "tag" : "Example input file using a traditional airplane",
+    "tag" : "Example input file using a AMD Plane",
     "run" : {
         "display_wireframe" : {
             "show_legend" : true
@@ -21,7 +21,7 @@
     "scene" : {
         "atmosphere" : {},
         "aircraft" : {
-            "traditional_airplane" : {
+            "AMD_Plane" : {
                 "file" : "AMD_Plane.json",
                 "state" : {
                     "velocity" : [45, "mph"],
